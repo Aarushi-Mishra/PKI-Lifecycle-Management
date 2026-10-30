@@ -41,9 +41,9 @@ mkdir -p pki-lab/root-ca pki-lab/intermediate-ca/newcerts pki-lab/server config 
 
 **Screenshot 1:** Terminal displaying the OpenSSL version.
 
-`![OpenSSL Version](screenshots/01-openssl-version.png)`
+![OpenSSL Version](screenshots/01-openssl-version.png)
 
 **Screenshot 2:** ServiceNow Developer Instance home page.
 
-`![ServiceNow Instance](screenshots/01-servicenow-instance.png)`
+![ServiceNow Instance](screenshots/01-servicenow-instance.png)
 
