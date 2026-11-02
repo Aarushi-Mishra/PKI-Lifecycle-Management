@@ -8,7 +8,30 @@ Create a Root CA and an Intermediate CA using OpenSSL.
 - **Private Key:** Secret cryptographic key used for signing.
 - **Certificate:** Digital document containing identity and public-key information.
 
+## CA Hierarchy
+
 ![CA Hierarchy](screenshots/02-ca-hierarchy.png)
+
+
+## Process
+
+Root CA Administrator Creates Root CA
+
+↓
+
+Intermediate CA Administrator Generates key and CSR
+
+↓
+
+Root CA Administrator Approves and signs Intermediate CA CSR
+
+↓
+
+Crypto Ops Engineer Verifies certificate chain
+
+↓
+
+Trusted Issuing CA Established
 
 ## Step 1 — Generate Root CA Private Key
 

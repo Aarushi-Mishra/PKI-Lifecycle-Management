@@ -6,6 +6,38 @@ Simulate application certificate request intake, CSR validation, issuance, and v
 
 The Payment Application Team requests a TLS certificate for:`payments.securebank.example`
 
+## Process:
+
+Application Team Requests certificate
+
+↓
+
+ServiceNow Records request and approval
+
+↓
+
+Application Team Generates private key + CSR
+
+↓
+
+IT Security Analyst Validates authorization and CSR
+
+↓
+
+Intermediate CA Signs approved CSR
+
+↓
+
+IT Security Analyst Verifies and delivers certificate
+
+↓
+
+Application Team Deploys and tests TLS
+
+↓
+
+Certificate Ready for Use
+
 ## Step 1 — Create ServiceNow Request
 
 Create a ServiceNow request using an available workflow.

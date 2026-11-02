@@ -2,6 +2,30 @@
 
 Maintain a certificate inventory to track ownership, expiration, status, and renewal requirements.
 
+## Process:
+
+Certificate Issued
+
+↓
+
+IT Security Analyst Extracts Certificate Metadata
+
+↓
+
+Application Owner Confirmed
+
+↓
+
+Certificate Recorded in ServiceNow
+
+↓
+
+Expiration Monitored
+
+↓
+
+Renewal Needs Identified
+
 ## Step 1 — Extract Certificate Metadata
 
 ```bash
