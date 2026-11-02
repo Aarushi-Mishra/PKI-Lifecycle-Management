@@ -192,8 +192,3 @@ openssl verify -CAfile pki-lab/root-ca/ca.crt pki-lab/intermediate-ca/int.crt
 **Expected Result:** `OK`
 
 Hence, established a two-level PKI trust hierarchy with a Root CA and an Intermediate CA.
-
-## Screenshot
-
-![Inter CA Cert Verification](screenshots/02-intermediate-cert-verification.png)
-
