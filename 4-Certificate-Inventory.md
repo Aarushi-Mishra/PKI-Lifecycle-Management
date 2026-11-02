@@ -46,6 +46,8 @@ Record:
 
 The status should reflect the certificate's actual lifecycle state. Do not mark it Installed unless deployment has been verified.
 
+![cert registration](screenshots/04-cert-registration-servicenow.png)
+
 ## Step 3 — Check Certificate Expiration
 
 ```bash
@@ -68,18 +70,8 @@ openssl x509 -checkend 2592000 -noout -in pki-lab/server/app-server.crt
 - Exit code `0`: Certificate remains valid beyond 30 days.
 - Exit code `1`: Certificate expires within 30 days or is already expired.
 
-This checks local certificate expiry. It does not create automatic alerts.
+![expiry](screenshots/04-check-cert-expiry.png)
 
-## Screenshots
+Note: This checks local certificate expiry. It does not create automatic alerts.
 
-**Screenshot 1 — Certificate metadata**
-
-`![Certificate Metadata](screenshots/04-certificate-metadata.png)`
-
-**Screenshot 2 — ServiceNow inventory**
-
-`![Certificate Inventory](screenshots/04-certificate-inventory.png)`
-
-## Outcome
-
-Demonstrated certificate inventory management, expiration checking, ownership tracking, and lifecycle documentation.
+Hence, demonstrated certificate inventory management, expiration checking, ownership tracking, and lifecycle documentation.

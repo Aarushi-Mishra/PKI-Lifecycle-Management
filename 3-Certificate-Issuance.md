@@ -231,7 +231,7 @@ Hence, we demonstrated certificate request handling, CSR validation, issuance, v
 
 Initializing a Certificate Authority (CA) database creates the lightweight tracking ledger that a CA uses to maintain state. Without it, a CA is "blind"—it cannot track which certificates it has issued, when they expire, or which ones have been revoked.
 
-**Why do we ned it?**
+**Why do we need it?**
 
 A CA isn't just a cryptographic key pair; it is an issuing authority. To operate responsibly, it must keep track of every digital asset it creates.
 
@@ -253,6 +253,7 @@ When you initialize an OpenSSL-style CA database, you create three core files:
 
 
 **How Is This Done in Real SOC / Crypto Operations Teams?**
+
 In production enterprise environments, teams rarely manage flat text files like index.txt manually. Instead, they use commercial Enterprise PKI Platforms or Certificate Lifecycle Management (CLM) tools.
 
 OpenSSL Lab Component           Enterprise Production Equivalent
