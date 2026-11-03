@@ -27,7 +27,7 @@ Root CA Administrator Approves and signs Intermediate CA CSR
 
 ↓
 
-Crypto Ops Engineer Verifies certificate chain
+IT Security Analyst Verifies certificate chain
 
 ↓
 
