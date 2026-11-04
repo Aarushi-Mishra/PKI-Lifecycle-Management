@@ -2,7 +2,7 @@
 
 Create a Root CA and an Intermediate CA using OpenSSL.
 
-- **PKI:** System for managing digital certificates and public/private keys.
+- **PKI (Public Key Infrastructure):** System for managing digital certificates and public/private keys.
 - **Root CA:** Highest trusted authority in the certificate hierarchy.
 - **Intermediate CA:** Issues certificates under the authority of the Root CA.
 - **Private Key:** Secret cryptographic key used for signing.
