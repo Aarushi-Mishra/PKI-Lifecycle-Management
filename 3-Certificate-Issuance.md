@@ -259,7 +259,26 @@ Hence, we demonstrated certificate request handling, CSR validation, issuance, v
 
 ## Things to Note
 
-**Initializing the CA DB**
+
+### **1. Key Used in Creating the CSR**
+
+Note that the Application Team submits the public key as part of the CSR, not the private key. The private key stays with the Application Team and is not supposed to be revealed at any point.
+
+**What actually happens?**
+
+An RSA private-key file contains the private key information and enough information to obtain its corresponding public key.
+
+When OpenSSL reads app-server.key, it does two things:
+1. Extracts the corresponding public key and places it in the CSR.
+2. Uses the private key to digitally sign the CSR, proving possession of that key.
+
+The private key itself is never included in the CSR. The -key option simply tells OpenSSL which local private-key file to read. It does not mean that the file is transmitted to the CA.
+
+![View Public Key](<screenshots/03-app-server public key.png>)
+
+The **-pubout** option outputs only the corresponding public key.
+
+### **2. Initializing the CA DB**
 
 Initializing a Certificate Authority (CA) database creates the lightweight tracking ledger that a CA uses to maintain state. Without it, a CA is "blind"—it cannot track which certificates it has issued, when they expire, or which ones have been revoked.
 
