@@ -30,4 +30,3 @@ The project demonstrates how a Crypto Operations team handles certificate reques
 Certificate Lifecycle Management | PKI | SSL/TLS | CSR Validation | OpenSSL | ServiceNow | Request Fulfillment | Certificate Inventory | Incident Management | Risk Mitigation
 
 
-Note: This is a personal learning project using simulated enterprise workflows. All actions are performed in a non-production environment.
