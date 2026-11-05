@@ -1,7 +1,7 @@
 # Understanding PKI, Key Management, and AI in Modern Crypto Operations
 
 #### Why we need digital certificates?
-Benefit of certificates (or PKI Infrastructure) is that it allows entities to communicate with each other without having to know them previously. It allows them to communicate securely through an insecure public medium ie.e Internet.
+Benefit of certificates (or PKI Infrastructure) is that it allows entities to communicate with each other without having to know them previously. It allows them to communicate securely through an insecure public medium i.e. Internet.
 
 PKI (Public Key Infrastructure) is much bigger than generating certificates with OpenSSL. In an enterprise, it involves cryptographic keys, digital certificates, trust management, hardware security, automation, governance, monitoring, and incident response.
 
