@@ -46,6 +46,9 @@
 | PKCS#8  | `.key`, `.pem`                 | Private key, optionally encrypted                         | Key storage                        |
 | JKS     | `.jks`                         | Java keystore containing certificates and/or private keys | Java applications                  |
 
+-> PKCS: Public Key Cryptography Standard, PEM: Privacy-Enhanced Mail, DER: Distinguished Encoding Rules, JKS: Java Keystore
+
+
 ### Remember
 
 - TLS handshake: Server presents `.crt` certificate and usually its Intermediate CA chain; private key stays on the server.
